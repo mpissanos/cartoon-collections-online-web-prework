@@ -17,8 +17,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   found = array.select{ |x| cheese_types.include?(x) }
-  if found.length == 0 
-    return nil
+  if found.length != 0 
+    return found.join(" ")
   end
-  return found[0].join(" ")
 end
