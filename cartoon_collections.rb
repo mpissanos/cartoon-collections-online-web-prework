@@ -12,7 +12,6 @@ def long_planeteer_calls(array)
   test_arr = []
 test_arr << array.select { |calls| calls.length > 4 } 
 if test_arr.length == 0 
-  true
 end
 end
  
