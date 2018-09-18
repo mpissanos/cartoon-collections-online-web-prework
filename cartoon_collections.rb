@@ -16,5 +16,7 @@ end
  
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array & cheese_types * " "
+  if (array & cheese_types).length > 0
+    return array [0]
+  end
 end
