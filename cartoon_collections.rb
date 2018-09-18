@@ -12,7 +12,9 @@ def long_planeteer_calls(array)
   test_arr = []
 test_arr << array.select { |calls| calls.length > 4 } 
    end
-
+if test_arr.length == 0 
+  return true
+end
  
 
 # def find_the_cheese# code an argument here
